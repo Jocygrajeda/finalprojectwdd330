@@ -97,6 +97,10 @@ main {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #1d2a62;
     color: #f5f3d8;
     padding: 10px 0;
