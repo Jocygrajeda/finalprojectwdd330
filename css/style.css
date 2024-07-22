@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #a8a68b;
+    color: #000000;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -133,6 +133,14 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #1d2a62;
+}
+
+.box p {
+    color: #555;
+}
+
+.calorie-info p {
+    color: #333;
 }
 
 .central-section {
