@@ -1,4 +1,11 @@
-/*login*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh; 
+    padding: 10px 0;
+}
+
 form {
     width: 100%;
     max-width: 400px;
@@ -48,9 +55,13 @@ form button {
 form button:hover {
     background-color: #384e3c;
 }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
 
-#message {
-    text-align: center;
-    margin-top: 10px;
+.container h2 {
+    text-align: center; 
     color: #1d2a62;
 }
