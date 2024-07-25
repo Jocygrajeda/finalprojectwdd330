@@ -29,34 +29,37 @@
         </div>
     </nav>
 
-    <main>
-        <div class="container">
-            <div class="tab">
-                <button class="tablinks active" onclick="openTab(event, 'loginForm')">Login</button>
-                <button class="tablinks" onclick="openTab(event, 'registrationForm')">Register</button>
-            </div>
-            
-            <form id="loginForm" class="tabcontent">
-                <h2>Login</h2>
-                <label for="loginEmail">Email:</label><br>
-                <input type="email" id="loginEmail" name="email" required><br><br>
-                <label for="loginPassword">Password:</label><br>
-                <input type="password" id="loginPassword" name="password" required><br><br>
-                <button type="submit">Login</button>
-                <p id="loginMessage"></p>
-            </form>
-            
-            <form id="registrationForm" class="tabcontent" style="display:none;">
-                <h2>Register</h2>
-                <label for="registerEmail">Email:</label><br>
-                <input type="email" id="registerEmail" name="email" required><br><br>
-                <label for="registerPassword">Password:</label><br>
-                <input type="password" id="registerPassword" name="password" required><br><br>
-                <button type="submit">Register</button>
-                <p id="registrationMessage"></p>
-            </form>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+          <header>Login</header>
+          <form action="#">
+            <input type="text" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <a href="#">Forgot password?</a>
+            <input type="button" class="button" value="Login">
+          </form>
+          <div class="signup">
+            <span class="signup">Don't have an account?
+             <label for="check">Signup</label>
+            </span>
+          </div>
         </div>
-    </main>
+        <div class="registration form">
+          <header>Signup</header>
+          <form action="#">
+            <input type="text" placeholder="Enter your email">
+            <input type="password" placeholder="Create a password">
+            <input type="password" placeholder="Confirm your password">
+            <input type="button" class="button" value="Signup">
+          </form>
+          <div class="signup">
+            <span class="signup">Already have an account?
+             <label for="check">Login</label>
+            </span>
+          </div>
+        </div>
+      </div>
 
     <footer>
         <div class="container">
