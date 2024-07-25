@@ -1,12 +1,10 @@
-/* Reset styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-
-/* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -32,7 +30,7 @@ header h1 {
 }
 
 nav {
-    background-color: #384e3c;
+    background-color: #1d2a62;
     height: 55px;
 }
 
@@ -47,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -61,12 +59,7 @@ main {
     padding: 20px 0;
 }
 
-.hero {
-    background-color: #87aece;
-    color: #1d2a62;
-    padding: 80px 0;
-    text-align: center;
-}
+
 
 .hero h2 {
     font-size: 3rem;
@@ -137,7 +130,7 @@ footer {
 .box h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #1d2a62;
+    color: #030921;
 }
 
 .box p {
