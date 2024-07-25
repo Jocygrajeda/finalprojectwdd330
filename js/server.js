@@ -10,6 +10,7 @@ let users = [];
 app.post('/api/register', (req, res) => {
     const { email, password } = req.body;
 
+
     if (!email || !password) {
         return res.status(400).json({ success: false, message: 'Email and password are required.' });
     }
@@ -24,7 +25,8 @@ app.post('/api/register', (req, res) => {
     res.json({ success: true, message: 'User registered successfully.' });
 });
 
-app.post('/api/login', (req, res) => {
+
+    app.post('/api/login', (req, res) => {
     const { email, password } = req.body;
 
     if (!email || !password) {
