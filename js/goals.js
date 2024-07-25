@@ -47,9 +47,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3>${goal.title}</h3>
                 <p>Target: ${goal.target}</p>
                 ${goal.progress ? `<p>Progress: ${goal.progress}</p>` : ''}
+                <button class="delete-goal-btn" data-title="${goal.title}">Delete</button>
             </div>
         `;
-
+    
         goalsContainer.insertAdjacentHTML('beforeend', newGoalHTML);
+    }
+
+    goalsContainer.addEventListener('click', function(event) {
+        if (event.target.classList.contains('delete-goal-btn')) {
+            const goalTitleToDelete = event.target.getAttribute('data-title');
+            deleteGoal(goalTitleToDelete);
+            event.target.closest('.goal').remove();
+        }
+    });
+    
+    function deleteGoal(title) {
+        let goals = JSON.parse(localStorage.getItem('goals')) || [];
+        goals = goals.filter(goal => goal.title !== title);
+        localStorage.setItem('goals', JSON.stringify(goals));
     }
 });

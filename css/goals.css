@@ -3,7 +3,7 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0.2, 0, 0, 0.3);
 }
 
 .goals-section h2 {
@@ -14,11 +14,11 @@
 }
 
 .goal {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.3);
 }
 
 .goal h3 {
@@ -28,7 +28,20 @@
 }
 
 .goal p {
-    color: #333;
+    color: #131212;
     margin-bottom: 5px;
 }
 
+.delete-goal-btn {
+    background-color: #741e15;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.delete-goal-btn:hover {
+    background-color: #c0392b;
+}
