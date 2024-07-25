@@ -30,40 +30,11 @@
     </nav>
 
     <main>
-        <div class="container">
-            <section class="food-diary-section">
-                <h2>Food Diary</h2>
-                <form id="foodForm">
-                    <div class="form-group">
-                        <label for="foodName">Food Name:</label>
-                        <input type="text" id="foodName" name="foodName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="calories">Calories:</label>
-                        <input type="number" id="calories" name="calories" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="protein">Protein (g):</label>
-                        <input type="number" id="protein" name="protein">
-                    </div>
-                    <div class="form-group">
-                        <label for="carbs">Carbohydrates (g):</label>
-                        <input type="number" id="carbs" name="carbs">
-                    </div>
-                    <div class="form-group">
-                        <label for="fat">Fat (g):</label>
-                        <input type="number" id="fat" name="fat">
-                    </div>
-                    <button type="submit">Log Food</button>
-                </form>
-                <div id="foodLog">
-                    <!-- Food log will be dynamically added here -->
-                </div>
-                <div id="totals">
-                    <!-- Totals for calories and nutrition will be displayed here -->
-                </div>
-            </section>
+        <div class="form-group">
+            <label for="foodSearch">Search Food:</label>
+            <input type="text" id="foodSearch" name="foodSearch" required>
         </div>
+        <button type="button" id="searchButton">Search</button>
     </main>
 
     <footer>
